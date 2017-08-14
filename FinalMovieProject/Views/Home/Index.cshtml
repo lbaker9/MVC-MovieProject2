@@ -1,0 +1,26 @@
+﻿
+<head>
+    <link href="@Url.Content("~/Content/Movies.css")" rel="stylesheet" type="text/css" />
+</head>
+
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1 class="text-primary">Popular Movies</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2 class="posterHead text-info">Avatar</h2>
+        <img class="moviePoster" src="@Url.Content("~/Content/images/avatar_poster.jpg")" alt="Avatar movie poster">
+    </div>
+    <div class="col-md-4">
+        <h2 class="posterHead text-info">Gone with the Wind</h2>
+        <img class="moviePoster" src="@Url.Content("~/Content/images/gone_w_the_wind_poster.jpg")" alt="Gone with the Wind movie poster">
+    </div>
+    <div class="col-md-4">
+        <h2 class="posterHead text-info">Titanic</h2>
+        <img class="moviePoster" src="@Url.Content("~/Content/images/titanic_poster.jpg")" alt="Titanic movie poster">
+    </div>
+</div>

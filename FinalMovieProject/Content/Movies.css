@@ -1,0 +1,22 @@
+﻿.addMovieButton{
+    margin-top: 15px;
+}
+
+.detailsLink{
+    margin: 0 10px 0 10px;
+}
+
+.formHead{
+    font-size: 18pt;
+}
+
+.posterHead{
+    font-size: 15pt;
+    text-align: left;
+}
+
+.moviePoster {
+    height: 400px;
+    width: 250px;
+}
+

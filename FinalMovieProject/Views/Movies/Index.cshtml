@@ -1,0 +1,34 @@
+﻿
+
+<head>
+    <link href="@Url.Content("~/Content/Movies.css")" rel="stylesheet" type="text/css" />
+</head>
+
+<h2 class="text-primary">Movie List</h2>
+
+<div id="tableHeader" class="row">
+    <h4 class="col-md-2">Title</h4>
+    <h4 class="col-md-2">Release Date</h4>
+    <h4 class="col-md-2">Genre</h4>
+    <h4 class="col-md-2">Price</h4>
+    <h4 class="col-md-2">Rating</h4>
+</div>
+
+
+
+<div ng-controller="movieController">
+    <div class="row" ng-repeat="Movie in movieList">
+        <div class="col-md-2">{{Movie.Title}}</div>
+        <div class="col-md-2">{{Movie.ReleaseDate | date : 'fullDate'}}</div>
+        <div class="col-md-2">{{Movie.Genre}}</div>
+        <div class="col-md-2">{{Movie.Price}}</div>
+        <div class="col-md-2">{{Movie.Rating}}</div>
+        
+        <div class="col-md-2">
+            <a ng-href="/Movies/Edit/{{Movie.ID}}">Edit </a> 
+            <a class="detailsLink" ng-href="~/Movies/Details/{{Movie.ID}}">Details</a> 
+            <a ng-href="~/Movies/Delete/{{Movie.ID}}">Delete</a>
+        </div>
+    </div>
+    <div><a ng-href="~/Movies/Create/"><button class="addMovieButton" type="button">Add Movie</button></a></div>
+</div>
